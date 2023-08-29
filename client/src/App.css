@@ -98,7 +98,8 @@ input {
 
 button.login,
 button.register,
-button.create {
+button.create,
+button.update {
   width: 100%;
   display: block;
   background-color: #555;
@@ -114,7 +115,10 @@ form.register h1 {
   text-align: center;
 }
 
-button.logout {
+button.logout,
+a.login,
+a.register,
+a.create {
   background-color: #555;
   color: white;
   padding: 9px 17px;
@@ -161,4 +165,22 @@ div.content p {
 }
 div.content li {
   margin-bottom: 10px;
+}
+
+div.edit-row {
+  text-align: center;
+  margin-bottom: 20px;
+}
+div.post-page a.edit-btn {
+  background-color: #333;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+a svg {
+  height: 20px;
 }

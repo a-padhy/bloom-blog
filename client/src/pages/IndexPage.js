@@ -8,7 +8,12 @@ const IndexPage = () => {
       .then((response) => response.json())
       .then((posts) => setPosts(posts));
   }, []);
-  return <>{posts.length > 0 && posts.map((post) => <Post {...post} />)}</>;
+  return (
+    <>
+      {posts.length > 0 &&
+        posts.map((post, _id) => <Post {...post} key={_id} />)}
+    </>
+  );
 };
 
 export default IndexPage;
