@@ -36,6 +36,7 @@ header a.logo {
 header nav {
   display: flex;
   gap: 15px;
+  align-items: center;
 }
 
 div.post {
@@ -85,7 +86,8 @@ input {
   border-radius: 5px;
 }
 
-button {
+button.login,
+button.register {
   width: 100%;
   display: block;
   background-color: #555;
@@ -93,8 +95,19 @@ button {
   color: white;
   border-radius: 5px;
   padding: 7px 0px;
+  cursor: pointer;
 }
 
 form h1 {
   text-align: center;
+}
+
+button.logout {
+  background-color: #555;
+  color: white;
+  padding: 9px 17px;
+  border-radius: 5px;
+  border: 0px;
+  font-size: 0.9rem;
+  cursor: pointer;
 }
