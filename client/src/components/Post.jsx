@@ -1,10 +1,10 @@
 import React from "react";
-
-const Post = ({ title, summary, content, cover }) => {
+import { formatISO9075 } from "date-fns";
+const Post = ({ title, summary, content, cover, createdAt, author }) => {
   return (
     <div className="post">
       <img
-        src="https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+        src={"http://localhost:4000/" + cover}
         alt="post-img"
         className="image"
       />
@@ -12,9 +12,9 @@ const Post = ({ title, summary, content, cover }) => {
         <h2>{title}</h2>
         <p className="info">
           <a className="author" href="/">
-            Ashutosh Padhy
+            {author.username}
           </a>
-          <time>28-03-2023 11:40</time>
+          <time>{formatISO9075(new Date(createdAt))}</time>
         </p>
         <p className="summary">{summary}</p>
       </div>
