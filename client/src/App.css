@@ -87,7 +87,8 @@ input {
 }
 
 button.login,
-button.register {
+button.register,
+button.create {
   width: 100%;
   display: block;
   background-color: #555;
@@ -98,7 +99,8 @@ button.register {
   cursor: pointer;
 }
 
-form h1 {
+form.login h1,
+form.register h1 {
   text-align: center;
 }
 
