@@ -9,6 +9,7 @@ const Header = () => {
       .then((response) => response.json())
       .then((userInfo) => setUserInfo(userInfo));
   }, []);
+
   const handleLogout = (e) => {
     e.preventDefault();
     fetch("http://localhost:4000/logout", {
