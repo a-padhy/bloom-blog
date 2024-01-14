@@ -7,8 +7,8 @@ The accomodation detail page that displays information such as title, descriptio
 
 To use the application, users must first sign up with their name, email and password. Once signed in, they can browse through all blogs, book them, create new ones, edit them, etc. 
 
-## Screenshots
 ## Video
+https://drive.google.com/file/d/1gz3w6fJCDC247JnqecEFdkQCLXzTxhmH/view?usp=drive_link
 
  
 ## Installation
